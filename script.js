@@ -1,6 +1,7 @@
 const app = document.getElementById('app')
 
-const isOperatr = /[x/+-]/
+const isOperatr = /[x/+-]/;
+const negativeNum = /[x/+]-$/
 
 class Calculator extends React.Component {
   constructor(props){
