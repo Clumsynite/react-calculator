@@ -2,6 +2,7 @@
 
 body {
   background-color: black;
+  font-family: 'Orbitron', sans-serif;
 }
 #app {
   height: 100%;
@@ -17,25 +18,28 @@ body {
   box-shadow: 0px 3px 10px 0px cyan;
   overflow: hidden;
   box-sizing: border-box;
-}
-#screen {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  text-align: right;
   width: 250px;
-  height: 80px;
-  font-family: 'Orbitron', sans-serif;
 }
 #temp {
+  min-height: 32px;
+  text-align: right;
+  vertical-align: text-top;
   color: cyan;
-  font-size: 30px;
+  font-size: 25px;
   padding-right: 2px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  height: auto;
 }
 #display {
+  min-height: 30px;
+  text-align: right;
+  vertical-align: text-top;
   color: lime;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;  
   padding-right: 2px;
+  height: auto;
 }
 #numpad {
   display: grid; 
@@ -47,13 +51,11 @@ body {
     "four five six add"
     "one two three equals"
     "zero zero decimal equals";
-  width: 250px;
   height: 300px;
 }
 button {
   font-size: 30px;
   border: 1px solid black;
-  font-family: 'Orbitron', sans-serif;
 }
 button:focus {
   outline: none;
