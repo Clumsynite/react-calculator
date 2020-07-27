@@ -1,13 +1,18 @@
 body {
-  
+  background-color: black;
 }
 #app {
   height: 100%;
   display: grid;
 }
-#app-body {
+#calc-body {
+  background-color: black;
   margin: 5% auto;
-  border: 1px solid red;
+  border: 1px solid black;
+  
+  -webkit-box-shadow: 0px 3px 10px 0px cyan;
+  -moz-box-shadow: 0px 3px 10px 0px cyan;
+  box-shadow: 0px 3px 10px 0px cyan;
 }
 #screen {
   display: grid;
@@ -15,6 +20,15 @@ body {
   text-align: right;
   width: 300px;
   height: 60px;
+}
+#temp {
+  color: cyan;
+  font-size: larger;
+}
+#display {
+  color: lime;
+  font-size: larger;
+  font-weight: bold;
 }
 #numpad {
   display: grid; 
@@ -28,6 +42,18 @@ body {
     "zero zero decimal equals";
   width: 300px;
   height: 300px;
+}
+button {
+  background-color: black;
+  border: 1px solid cyan;
+  color: cyan;
+  font-size: 30px;
+}
+button:focus {
+  border: 1px solid black;
+  outline: none;
+  color: black;
+  background-color: cyan;
 }
 #clear {
   grid-area: clear;
