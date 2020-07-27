@@ -10,7 +10,7 @@ body {
 }
 #calc-body {
   background-color: black;
-  margin: 5% auto;
+  margin: 2% auto;
   border: 1px solid black;
   border-radius: 15px;
   -webkit-box-shadow: 0px 3px 10px 0px cyan;
@@ -18,7 +18,7 @@ body {
   box-shadow: 0px 3px 10px 0px cyan;
   overflow: hidden;
   box-sizing: border-box;
-  width: 250px;
+  width: 400px;
 }
 #temp {
   min-height: 32px;
@@ -51,7 +51,7 @@ body {
     "four five six add"
     "one two three equals"
     "zero zero decimal equals";
-  height: 300px;
+  height: 500px;
 }
 button {
   font-size: 30px;
