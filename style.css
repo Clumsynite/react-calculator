@@ -150,3 +150,23 @@ button:hover {
 #divide {
   grid-area: divide;
 }
+
+@media screen and (max-width: 600px){
+  #app {
+    height: 95vh;
+    margin: 0;
+  }
+  #calc-body {
+    width: 100%;
+    margin: 0;
+  }
+  #temp {
+    min-height: 10vh;
+  }
+  #display {
+    min-height: 10vh;
+  }
+  #numpad {
+    height: 80vh;
+  }
+}
