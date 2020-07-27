@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 body {
   background-color: black;
 }
@@ -20,15 +22,18 @@ body {
   text-align: right;
   width: 300px;
   height: 60px;
+  font-family: 'Orbitron', sans-serif;
 }
 #temp {
   color: cyan;
   font-size: larger;
+  padding-right: 2px;
 }
 #display {
   color: lime;
   font-size: larger;
-  font-weight: bold;
+  font-weight: bold;  
+  padding-right: 2px;
 }
 #numpad {
   display: grid; 
@@ -43,17 +48,47 @@ body {
   width: 300px;
   height: 300px;
 }
-button {
-  background-color: black;
-  border: 1px solid cyan;
+.numeric {
+  background-color: cyan;
+  border: 1px solid black;
+  color: black;
+}
+.numeric:active {
+  outline: none;
   color: cyan;
+  background-color: black;
+}
+.operator {
+  background-color: #00ff80;
+  color: black;
+}
+.operator:active {
+  background-color: black;
+  color: #00ff80;
+}
+#clear {
+  background-color: #ff0040;
+  color: black;
+}
+#clear:active {
+  background-color: black;
+  color: #ff0040;
+}
+#equals {
+  background-color: #0080ff;
+  color: black;
+}
+#equals:active {
+  background-color: black;
+  color: #0080ff;
+}
+button {
   font-size: 30px;
+  border: 1px solid black;
+  font-family: 'Orbitron', sans-serif;
 }
 button:focus {
-  border: 1px solid black;
   outline: none;
-  color: black;
-  background-color: cyan;
 }
 #clear {
   grid-area: clear;
