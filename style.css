@@ -11,27 +11,29 @@ body {
   background-color: black;
   margin: 5% auto;
   border: 1px solid black;
-  
+  border-radius: 15px;
   -webkit-box-shadow: 0px 3px 10px 0px cyan;
   -moz-box-shadow: 0px 3px 10px 0px cyan;
   box-shadow: 0px 3px 10px 0px cyan;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 #screen {
   display: grid;
   grid-template-rows: 1fr 1fr;
   text-align: right;
-  width: 300px;
-  height: 60px;
+  width: 250px;
+  height: 80px;
   font-family: 'Orbitron', sans-serif;
 }
 #temp {
   color: cyan;
-  font-size: larger;
+  font-size: 30px;
   padding-right: 2px;
 }
 #display {
   color: lime;
-  font-size: larger;
+  font-size: 30px;
   font-weight: bold;  
   padding-right: 2px;
 }
@@ -45,42 +47,8 @@ body {
     "four five six add"
     "one two three equals"
     "zero zero decimal equals";
-  width: 300px;
+  width: 250px;
   height: 300px;
-}
-.numeric {
-  background-color: cyan;
-  border: 1px solid black;
-  color: black;
-}
-.numeric:active {
-  outline: none;
-  color: cyan;
-  background-color: black;
-}
-.operator {
-  background-color: #00ff80;
-  color: black;
-}
-.operator:active {
-  background-color: black;
-  color: #00ff80;
-}
-#clear {
-  background-color: #ff0040;
-  color: black;
-}
-#clear:active {
-  background-color: black;
-  color: #ff0040;
-}
-#equals {
-  background-color: #0080ff;
-  color: black;
-}
-#equals:active {
-  background-color: black;
-  color: #0080ff;
 }
 button {
   font-size: 30px;
@@ -89,6 +57,45 @@ button {
 }
 button:focus {
   outline: none;
+}
+button:hover {
+  opacity: 0.75;
+}
+.numeric {
+  background-color: cyan;
+  border: 1px solid black;
+  color: black;
+}
+.numeric:active {
+  color: cyan;
+  background-color: black;
+  opacity: 1;
+}
+.operator {
+  background-color: #00ff80;
+  color: black;
+}
+.operator:active {
+  background-color: black;
+  color: #00ff80;
+  opacity: 1;
+}
+#clear {
+  background-color: #ff0040;
+  color: black;
+}
+#clear:active {
+  background-color: black;
+  color: #ff0040;
+  opacity: 1;
+}
+#equals {
+  background-color: #0080ff;
+  color: black;
+}
+#equals:active {
+  background-color: black;
+  color: #0080ff;
 }
 #clear {
   grid-area: clear;
